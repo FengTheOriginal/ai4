@@ -1,0 +1,29 @@
+You need to find a secret message hidden in an image file
+
+For your instructions, you need to go to the images directory
+
+You can do that by typing in cd images
+
+Once you are in the folder, type in ls -la
+
+You should see a lot of information but we want to focus on the size of the characters
+All the files have a 6026 character file size... or do they?
+
+If only we could check if there was file bigger than that size...
+
+Well there is!
+Type in or Copy: find -type f -size +6026c
+We are using the find command
+-type f: means to search only regular files
+-size +6026c: search for files larger than 6026 bytes
+
+Once you find the file
+
+Type in: steghide extract -sf <filename> -xf /tmp/flag.txt
+If prompted for a password: just type in password
+
+-sf <filename>: stands for stegofile, don't forget to replace <filename> with the actual name
+-xf: this means specify extraction target file and tells the command to extract the data to /tmp/flag.txt
+
+Then write cat /tmp/flag.txt 
+

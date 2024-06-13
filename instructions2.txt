@@ -1,0 +1,9 @@
+In this one you have to find the correct user and password
+
+
+Start by typing in this command:
+
+nohup python3 startup.py &
+
+then control + c
+then python3 server.py
