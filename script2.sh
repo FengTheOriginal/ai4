@@ -7,6 +7,7 @@ HOMEDIR="/home/$USERNAME"
 SOURCE_DIR="/home/testuser"
 FILES=("startup.py" "server.py")
 PASSWORD="testuser01"
+#FAILED ASCII ART (DOESN"T BOOT UP WHEN LOGGING IN)
 ASCII_ART="
 ...................::::::::::::::..................
 ..............::-=::-::----------+-:...............
