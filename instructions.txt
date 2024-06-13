@@ -27,3 +27,13 @@ If prompted for a password: just type in password
 
 Then write cat /tmp/flag.txt 
 
+Instructions for second challenge (are in seperate files, just for convinience):
+
+In this one you have to find the correct user and password
+
+Start by typing in this command:
+
+nohup python3 startup.py &
+
+then control + c
+then python3 server.py
